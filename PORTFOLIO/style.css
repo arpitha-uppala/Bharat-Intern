@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    height: 110vh;
+    width: 100vw;
+    background: url(images/bg.jpg);
+}
+
+.image {
+  width: 20%; 
+  height: auto; 
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 100px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 2px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color:#fd4766;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:#fd4766
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fd4766;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    border: 2px solid #fd4766;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #fd4766;
+}
+
+.detail{
+    position: absolute;
+    top: 35%;
+    left:8%;
+}
+
+.detail h1{
+    color: #1f1f25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.detail h1 span{
+    color: #fd4766;
+}
+.detail p{
+    color: #1f1f25;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+
+
+.project-card {
+    height: 100;
+    width: 500px;
+    inline-size: none;
+  
+    background-color: #f8f3f3;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px green;
+  }
+  
+  .projects {
+  
+    background: #be81b9a5;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .projects h2 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+
+  }
+  
+  .project-item {
+    margin: 20px 0;
+  }
+  
+  .project-item h3 {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .project-item p {
+    font-size: 16px;
+    color: #d9dcdd;
+  }
+
+
+  
+
+  .skills {
+    background: lightcyan;
+    padding: 40px 0;
+    padding: 50px;
+    justify-content: space-between;
+  }
+  
+  .skills h2 {
+    font-size: 28px;
+    color: black;
+  }
+  
+  .skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .skills li {
+    font-size: 20px;
+    color: #6d8654;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f8f3f3;
+  }
+
+
+
+  
